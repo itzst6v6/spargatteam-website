@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spargat Team & Netherotiam Team</title>
+    <link rel="icon" href="favicon.png">
+    <style>
+        @font-face {
+            font-family: 'BL1';
+            src: url('bl1.otf') format('opentype');
+        }
+
+        body {
+            background: linear-gradient(to bottom, #20000b, #21001e);
+            font-family: 'BL1', Arial, sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            cursor: url('cursor.png'), auto; /* Default cursor */
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: black;
+        }
+        .navbar img {
+            height: 40px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 20px;
+            transition: color 0.3s;
+            cursor: url('cursor-hand.png'), pointer; /* Cursor for clickable items */
+        }
+        .navbar a.aboutus {
+            font-weight: bold;
+            color: purple;
+        }
+        .navbar a:hover {
+            color: orange;
+        }
+        .subscribe-bar {
+            background: purple;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .subscribe-button {
+            background: red;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 16px;
+            cursor: url('cursor-hand.png'), pointer; /* Cursor for buttons */
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .subscribe-button:hover {
+            background: darkred;
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        .project-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            color: purple;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .subtitle {
+            color: orange;
+            font-size: 16px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .button {
+            display: block;
+            background: purple;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 20px;
+            width: 200px;
+            margin: 20px auto;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+            cursor: url('cursor-hand.png'), pointer; /* Cursor for clickable items */
+        }
+        .button:hover {
+            background: darkviolet;
+            transform: scale(1.05);
+        }
+        .discord-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: purple;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 20px;
+            width: 200px;
+            margin: 20px auto;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+            cursor: url('cursor-hand.png'), pointer; /* Cursor for clickable items */
+        }
+        .discord-button img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .discord-button:hover {
+            background: darkviolet;
+            transform: scale(1.05);
+        }
+        .donate-button {
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background 0.3s, transform 0.2s;
+            cursor: url('cursor-hand.png'), pointer; /* Cursor for buttons */
+        }
+        .donate-button:hover {
+            background: darkgreen;
+            transform: scale(1.05);
+        }
+        .team-section, .game-section {
+            margin-top: 40px;
+            animation: slideIn 1.5s ease-out;
+        }
+        .team-section img, .game-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        /* Animation Definitions */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                margin: 10px 0;
+            }
+            .container {
+                padding: 20px 10px;
+            }
+            .button, .discord-button {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo_home.png" alt="Logo">
+        <a href="index.html">Home</a>
+        <a href="#" class="aboutus">About-us</a>
+    </div>
+    <div class="subscribe-bar">
+        SUBSCRIBE TO BLOCKMAN LAUNCHER IN YOUTUBE! <a href="https://www.youtube.com/channel/UCWrz10YzSZUqfIBq4gfGDKw/sub_confirmation=1" class="subscribe-button">SUBSCRIBE</a>
+    </div>
+    <div class="container">
+        <div class="title">About Blockman Launcher</div>
+        <div class="subtitle">A project to bring Blockman GO Web back to life!</div>
+        <p>Blockman Launcher is a project made by the Spargat Team & Netherotiam Team to revive Blockman GO Web back to life using their own private servers for Android, PC, MacOS, and more.</p>
+        
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <img src="logo_home.png" alt="Team Logo" loading="lazy">
+            <p>The Spargat Team & Netherotiam Team is a group of players working on the launcher, servers, games, and more.</p>
+            <p>Team Members:</p>
+            <ul>
+                <li>sir_flinclenstlung - Developer &  Founder</li>
+                <li>devv.samurai - Developer & Owner<li>
+                <li> Stevexinpa - Website Designer (Team)</li>
+                <li>Comical - Developer & Founder</li>
+                <li>TheKing - Developer & Founder <li>
+                <li>Anatine - Developer & Founder</li>    
+                <li>devvy - Developer & Owner </li>
+                <li> eternal - Developer & Owner</li>
+                <li>aqeel - Developer & Owner </li>
+                <li>rosario - Developer & Owner </li>        
+            </ul>
+           
+
+        </div>
+
+        <div class="contact-info">
+            <p>Contact us at: <a href="https://discord.gg/PqZtGn3HMn">our discord.</a></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.youtube.com/channel/UCWrz10YzSZUqfIBq4gfGDKw" target="_blank">YouTube</a>
+        </div>
+
+        <div class="game-section">
+            <h2>Our Project</h2>
+            <img src="ic_website_logo_bl.png" alt="Blockman Launcher Logo" loading="lazy">
+            <p>We are working to bring Blockman GO Web back with new features and improvements for all platforms.</p>
+        </div>
+    </div>
+</body>
+</html>
